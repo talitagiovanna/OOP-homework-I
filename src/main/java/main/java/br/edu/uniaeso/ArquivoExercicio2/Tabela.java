@@ -9,7 +9,7 @@ package main.java.br.edu.uniaeso.ArquivoExercicio2;
 	4	8	12	16
 	n	n*2	n*3	....	n*n
  */
-public class TabelaMultiplicativa {
+public class Tabela {
     public static void main(String[] args) {
         // Número de linhas na tabela.
         int nLinhas = 5;
