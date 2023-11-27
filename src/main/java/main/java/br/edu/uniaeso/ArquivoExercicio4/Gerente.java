@@ -9,7 +9,15 @@ public class Gerente extends Funcionario{
     public int senha;
     public int numeroDeFuncionariosGerenciados;
 
-    public Gerente() {}
+    public Gerente(String nome, String sobrenome, int numeroDeFuncionarios) {
+        super(nome, sobrenome);
+        this.numeroDeFuncionariosGerenciados = numeroDeFuncionarios;
+    }
+
+    @Override
+    public String getNomeCargo() {
+        return "Gerente";
+    }
 
     public boolean autentica(int senha) {
         if(this.senha == senha) {
