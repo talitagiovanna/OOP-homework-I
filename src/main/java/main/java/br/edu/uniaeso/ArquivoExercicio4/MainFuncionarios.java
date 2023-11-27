@@ -8,34 +8,53 @@ public class MainFuncionarios {
 
         //Gerente gerente = new Gerente("João", "da Neves", 5);
         //System.out.println(gerente.getNomeCompleto());
-        Diretor diretor = new Diretor("Talita", "Oliveira");
+        //Diretor diretor = new Diretor("Talita", "Oliveira");
         
-        Dev dev = new Dev("Joicy", "Brasil");
-        dev.setNome("Fulano");
-        dev.setSobrenome("de Tal");
-        Endereco end = new Endereco();
-        end.setRua("Rua 1");
-        dev.setEndereco(end);
-        dev.setLinguagem("Java");
-        dev.setSenha(980);
+        //Dev dev = new Dev("Joicy", "Brasil");
+        //dev.setNome("Fulano");
+        //dev.setSobrenome("de Tal");
+        //Endereco end = new Endereco();
+        //end.setRua("Rua 1");
+        //dev.setEndereco(end);
+        //dev.setLinguagem("Java");
+        //dev.setSenha(980);
 
-        Cliente cliente = new Cliente();
-        SistemaInterno sistemaInterno = new SistemaInterno();
-        boolean isLogado = sistemaInterno.autentica(cliente, 780);
+        //Cliente cliente = new Cliente();
+        //SistemaInterno sistemaInterno = new SistemaInterno();
+        //boolean isLogado = sistemaInterno.autentica(cliente, 780);
 
 
         //SistemaInterno sistemaInterno = new SistemaInterno();
         //boolean isLogado = sistemaInterno.autentica(dev, 980);
-        if(isLogado) {
+        /*if(isLogado) {
             //acesso ao sistema
         }
+*/
+        //System.out.println(dev.getNomeCompleto());
+        //imprimeNomeCargo(dev);
 
-        System.out.println(dev.getNomeCompleto());
-        imprimeNomeCargo(dev);
+        //Gerente gerente = new Gerente("Gerente", "da Silva");
 
-        Gerente gerente = new Gerente("Gerente", "da Silva");
+        //imprimeNomeCargo(gerente);
 
-        imprimeNomeCargo(gerente);
+        Cliente cliente = new Cliente();
+        cliente.setNome("Fulano");
+        cliente.setSobrenome(" de Tal");
+        String nomeCompleto;
+        System.out.println("INÍCIO DO SISTEMA");
+
+        try {
+            nomeCompleto = cliente.getNomeCompleto();
+        } catch (NullPointerException e) {
+            System.out.println(e);
+            nomeCompleto = "ocorre uma exception";
+        } finally {
+            System.out.println("SEMPRE EXECUTA");
+        }
+        
+        System.out.println(nomeCompleto);
+
+        System.out.println("FIM DO SISTEMA");
 
     }
 
