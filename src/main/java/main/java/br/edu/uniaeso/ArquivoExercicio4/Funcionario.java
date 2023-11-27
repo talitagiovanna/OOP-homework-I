@@ -15,6 +15,12 @@ public abstract class Funcionario {
 
     public abstract String getNomeCargo();
 
+    //public abstract boolean autentica(int senha);
+
+    /*
+     * GETTERS AND SETTERS
+     */
+
     public String getNomeCompleto() {
         return this.nome + " " + this.sobrenome;
     }

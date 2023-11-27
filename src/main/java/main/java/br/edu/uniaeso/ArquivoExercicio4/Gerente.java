@@ -1,6 +1,6 @@
 package main.java.br.edu.uniaeso.ArquivoExercicio4;
 
-public class Gerente extends Funcionario{
+public class Gerente extends Funcionario implements Autenticavel {
     
     /*public String nome;
     public String cpf;

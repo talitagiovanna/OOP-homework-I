@@ -17,6 +17,18 @@ public class MainFuncionarios {
         end.setRua("Rua 1");
         dev.setEndereco(end);
         dev.setLinguagem("Java");
+        dev.setSenha(980);
+
+        Cliente cliente = new Cliente();
+        SistemaInterno sistemaInterno = new SistemaInterno();
+        boolean isLogado = sistemaInterno.autentica(cliente, 780);
+
+
+        //SistemaInterno sistemaInterno = new SistemaInterno();
+        //boolean isLogado = sistemaInterno.autentica(dev, 980);
+        if(isLogado) {
+            //acesso ao sistema
+        }
 
         System.out.println(dev.getNomeCompleto());
         imprimeNomeCargo(dev);
