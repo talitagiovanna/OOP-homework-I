@@ -9,9 +9,9 @@ public class Gerente extends Funcionario{
     public int senha;
     public int numeroDeFuncionariosGerenciados;
 
-    public Gerente(String nome, String sobrenome, int numeroDeFuncionarios) {
+    public Gerente(String nome, String sobrenome) {
         super(nome, sobrenome);
-        this.numeroDeFuncionariosGerenciados = numeroDeFuncionarios;
+        //this.numeroDeFuncionariosGerenciados = numeroDeFuncionarios;
     }
 
     @Override

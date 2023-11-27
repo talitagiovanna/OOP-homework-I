@@ -6,6 +6,7 @@ public abstract class Funcionario {
     public String sobrenome;
     public String cpf;
     public double salario;
+    public Endereco endereco;
 
     public Funcionario(String nome, String sobrenome){
         this.nome = nome;
@@ -48,5 +49,13 @@ public abstract class Funcionario {
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 }
