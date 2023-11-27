@@ -10,6 +10,14 @@ public class CarteiraEstudantil {
 
     }
 
+    public int soma(int valor1, int valor2) {
+        return valor1 + valor2;
+    }
+
+    public float soma(float valor1, float valor2) {
+        return valor1 + valor2;
+    }
+
     /*CarteiraEstudantil(String nome) {
         this.nome = nome;
     }

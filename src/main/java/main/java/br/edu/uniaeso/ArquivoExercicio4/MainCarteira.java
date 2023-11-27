@@ -64,11 +64,12 @@ public class MainCarteira {
 
     }
 
-    public static void alteraValorString(CarteiraEstudantil carteira) {
+    /*public static void alteraValorString(CarteiraEstudantil carteira) {
             carteira.nome = "Nome dado pelo metódo";
         }
 
     public static void alteraValorInt(int valor) {
             valor = 10;
         }
+        */
 }
